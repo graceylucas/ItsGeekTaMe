@@ -3,9 +3,10 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Services Table View Controller-->
+        <!--Services-->
         <scene sceneID="a3H-4w-Bgw">
             <objects>
                 <tableViewController id="QzW-zE-zjd" customClass="ServicesTableViewController" customModule="ItsGeekTaMe" customModuleProvider="target" sceneMemberID="viewController">
@@ -21,6 +22,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="HJ7-N5-8Yd" kind="show" id="quW-uQ-z0L"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -28,11 +32,46 @@
                             <outlet property="delegate" destination="QzW-zE-zjd" id="Qcy-pg-3NK"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="T7F-Sc-tWq"/>
+                    <navigationItem key="navigationItem" title="Services" id="T7F-Sc-tWq"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EGe-BI-9Gb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1556" y="-315"/>
+        </scene>
+        <!--Service Detail-->
+        <scene sceneID="ZsB-L8-1tz">
+            <objects>
+                <viewController id="HJ7-N5-8Yd" customClass="ServiceDetailViewController" customModule="ItsGeekTaMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7dE-23-XzM"/>
+                        <viewControllerLayoutGuide type="bottom" id="Eqk-I9-Dn1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1Qt-Ol-T4n">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Service detail text" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="GEP-83-dle">
+                                <rect key="frame" x="20" y="77" width="560" height="76"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="76" id="Kfv-6B-ydx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GEP-83-dle" firstAttribute="leading" secondItem="1Qt-Ol-T4n" secondAttribute="leadingMargin" id="7uL-m2-EcP"/>
+                            <constraint firstItem="GEP-83-dle" firstAttribute="top" secondItem="7dE-23-XzM" secondAttribute="bottom" constant="13" id="Xgu-Wp-X8b"/>
+                            <constraint firstItem="GEP-83-dle" firstAttribute="trailing" secondItem="1Qt-Ol-T4n" secondAttribute="trailingMargin" id="yNp-cR-m3e"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Service Detail" id="RZa-MY-uwG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bao-2N-QDB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2206" y="-315"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -72,7 +111,7 @@
             </objects>
             <point key="canvasLocation" x="744" y="-315"/>
         </scene>
-        <!--View Controller-->
+        <!--IT'S GEEK TA ME-->
         <scene sceneID="pfc-vP-KZm">
             <objects>
                 <viewController id="9fG-Ji-eeP" sceneMemberID="viewController">
@@ -85,7 +124,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="DjE-Zr-up4"/>
+                    <navigationItem key="navigationItem" title="IT'S GEEK TA ME" id="DjE-Zr-up4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xeu-Vc-IcB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

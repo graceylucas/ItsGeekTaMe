@@ -14,6 +14,7 @@
 		7D4093B01C41EEC600E37565 /* ItsGeekTaMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4093AF1C41EEC600E37565 /* ItsGeekTaMeTests.swift */; };
 		7D4093BB1C41EEC600E37565 /* ItsGeekTaMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4093BA1C41EEC600E37565 /* ItsGeekTaMeUITests.swift */; };
 		7D4093C91C41F36C00E37565 /* ServicesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4093C81C41F36C00E37565 /* ServicesTableViewController.swift */; };
+		7D4093CB1C41FA0C00E37565 /* ServiceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4093CA1C41FA0C00E37565 /* ServiceDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		7D4093BA1C41EEC600E37565 /* ItsGeekTaMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItsGeekTaMeUITests.swift; sourceTree = "<group>"; };
 		7D4093BC1C41EEC600E37565 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D4093C81C41F36C00E37565 /* ServicesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesTableViewController.swift; sourceTree = "<group>"; };
+		7D4093CA1C41FA0C00E37565 /* ServiceDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				7D4093981C41EEC600E37565 /* AppDelegate.swift */,
 				7D4093C81C41F36C00E37565 /* ServicesTableViewController.swift */,
+				7D4093CA1C41FA0C00E37565 /* ServiceDetailViewController.swift */,
 				7D40939E1C41EEC600E37565 /* Main.storyboard */,
 				7D4093A11C41EEC600E37565 /* Assets.xcassets */,
 				7D4093A31C41EEC600E37565 /* LaunchScreen.storyboard */,
@@ -258,6 +261,7 @@
 			files = (
 				7D4093C91C41F36C00E37565 /* ServicesTableViewController.swift in Sources */,
 				7D4093991C41EEC600E37565 /* AppDelegate.swift in Sources */,
+				7D4093CB1C41FA0C00E37565 /* ServiceDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
