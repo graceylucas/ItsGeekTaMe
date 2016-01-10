@@ -59,15 +59,44 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jSh-0a-L9w">
+                                <rect key="frame" x="28" y="427" width="89" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="GDo-Zo-r7k"/>
+                                    <constraint firstAttribute="width" constant="89" id="f0A-ga-w0d"/>
+                                </constraints>
+                                <state key="normal" title="Email a Geek"/>
+                                <connections>
+                                    <action selector="emailAGeekButtonPressed:" destination="HJ7-N5-8Yd" eventType="touchUpInside" id="PtJ-fS-dWF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RwJ-3F-aZT">
+                                <rect key="frame" x="494" y="427" width="78" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="6z6-V9-bSD"/>
+                                    <constraint firstAttribute="width" constant="78" id="VLd-tR-Wwo"/>
+                                </constraints>
+                                <state key="normal" title="Call a Geek"/>
+                                <connections>
+                                    <action selector="callAGeekButtonPressed:" destination="HJ7-N5-8Yd" eventType="touchUpInside" id="jPW-N9-QWe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="GEP-83-dle" firstAttribute="leading" secondItem="1Qt-Ol-T4n" secondAttribute="leadingMargin" id="7uL-m2-EcP"/>
+                            <constraint firstItem="Eqk-I9-Dn1" firstAttribute="top" secondItem="jSh-0a-L9w" secondAttribute="bottom" constant="94" id="8zf-jQ-u1D"/>
+                            <constraint firstItem="Eqk-I9-Dn1" firstAttribute="top" secondItem="RwJ-3F-aZT" secondAttribute="bottom" constant="94" id="Lzs-5j-XdK"/>
                             <constraint firstItem="GEP-83-dle" firstAttribute="top" secondItem="7dE-23-XzM" secondAttribute="bottom" constant="13" id="Xgu-Wp-X8b"/>
+                            <constraint firstItem="jSh-0a-L9w" firstAttribute="leading" secondItem="1Qt-Ol-T4n" secondAttribute="leadingMargin" constant="8" id="cbd-UU-wnw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RwJ-3F-aZT" secondAttribute="trailing" constant="8" id="r0B-h3-Thl"/>
                             <constraint firstItem="GEP-83-dle" firstAttribute="trailing" secondItem="1Qt-Ol-T4n" secondAttribute="trailingMargin" id="yNp-cR-m3e"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Service Detail" id="RZa-MY-uwG"/>
+                    <connections>
+                        <outlet property="detailsTextView" destination="GEP-83-dle" id="5AJ-rZ-2LI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bao-2N-QDB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

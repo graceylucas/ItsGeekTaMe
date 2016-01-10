@@ -10,6 +10,19 @@ import UIKit
 
 class ServiceDetailViewController: UIViewController {
 
+    
+    @IBOutlet weak var detailsTextView: UITextView!
+    
+    
+    @IBAction func emailAGeekButtonPressed(sender: UIButton) {
+    }
+    
+    @IBAction func callAGeekButtonPressed(sender: UIButton) {
+    }
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
