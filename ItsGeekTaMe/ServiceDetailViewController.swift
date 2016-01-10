@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import MessageUI
 
-class ServiceDetailViewController: UIViewController {
-    
-    
+
+class ServiceDetailViewController: UIViewController, MFMailComposeViewControllerDelegate
+
+{
     var selectedRow: Int!
     
     
@@ -39,6 +41,21 @@ class ServiceDetailViewController: UIViewController {
     
     
     @IBAction func emailAGeekButtonPressed(sender: UIButton) {
+        
+        
+        let emailTitle = "IT'S GEEK TA ME Service Request"
+        let emailMessageText = "Let us know what you need!"
+        let toRecipent = ["ItsGeekTaMe@gmail.com"]
+        let mailCompose: MFMailComposeViewController = MFMailComposeViewController()
+        mailCompose.mailComposeDelegate = self
+        mailCompose.setSubject(emailTitle)
+        mailCompose.setMessageBody(emailMessageText, isHTML: false)
+        mailCompose.setToRecipients(toRecipent)
+        
+        self.presentViewController(mailCompose, animated: true, completion: nil)
+        
+        
+        
     }
     
     @IBAction func callAGeekButtonPressed(sender: UIButton) {
@@ -59,8 +76,10 @@ class ServiceDetailViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        
+        
     }
-    
+        
     
     /*
     // MARK: - Navigation
