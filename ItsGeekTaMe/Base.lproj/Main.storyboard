@@ -23,7 +23,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="HJ7-N5-8Yd" kind="show" id="quW-uQ-z0L"/>
+                                    <segue destination="HJ7-N5-8Yd" kind="show" identifier="showServiceDetailSegue" id="quW-uQ-z0L"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -51,10 +51,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Service detail text" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="GEP-83-dle">
-                                <rect key="frame" x="20" y="77" width="560" height="76"/>
+                                <rect key="frame" x="20" y="77" width="560" height="150"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="76" id="Kfv-6B-ydx"/>
+                                    <constraint firstAttribute="height" constant="150" id="Kfv-6B-ydx"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>

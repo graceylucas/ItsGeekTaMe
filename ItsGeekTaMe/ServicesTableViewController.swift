@@ -13,7 +13,6 @@ class ServicesTableViewController: UITableViewController {
     
     let servicesArray = ["New and Used Computers", "​Web Design", "Network and Internet Managment", "System O﻿ptimization", "Virus and Malware Management", "Additional Services"]
     
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -89,14 +88,24 @@ class ServicesTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
+
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        
+        if segue.identifier == "showServiceDetailSegue" {
+    
+            // Get the new view controller using segue.destinationViewController.
+            let serviceDetailViewController = segue.destinationViewController as! ServiceDetailViewController
+            
+            // Pass the selected object to the new view controller.
+            serviceDetailViewController.selectedRow = self.tableView.indexPathForSelectedRow?.row
+            
+        }
+        
+        
     }
-    */
 
 }
