@@ -11,7 +11,8 @@ import MessageUI
 
 
 class ServiceDetailViewController: UIViewController, MFMailComposeViewControllerDelegate
-
+    
+    
 {
     var selectedRow: Int!
     
@@ -44,7 +45,7 @@ class ServiceDetailViewController: UIViewController, MFMailComposeViewController
         
         
         let emailTitle = "IT'S GEEK TA ME Service Request"
-        let emailMessageText = "Let us know what you need!"
+        let emailMessageText = "Tell us how we can help!"
         let toRecipent = ["ItsGeekTaMe@gmail.com"]
         let mailCompose: MFMailComposeViewController = MFMailComposeViewController()
         mailCompose.mailComposeDelegate = self
@@ -55,13 +56,14 @@ class ServiceDetailViewController: UIViewController, MFMailComposeViewController
         self.presentViewController(mailCompose, animated: true, completion: nil)
         
         
-        
     }
     
     @IBAction func callAGeekButtonPressed(sender: UIButton) {
+        
+        UIApplication.sharedApplication().openURL(NSURL(string : "tel://2084069743")!)
+
+        
     }
-    
-    
     
     
     override func viewDidLoad() {
@@ -70,6 +72,7 @@ class ServiceDetailViewController: UIViewController, MFMailComposeViewController
         // Do any additional setup after loading the view.
         
         detailsTextView.text = serviceDetailArray[selectedRow]
+
         
     }
     
@@ -79,7 +82,8 @@ class ServiceDetailViewController: UIViewController, MFMailComposeViewController
         
         
     }
-        
+
+    
     
     /*
     // MARK: - Navigation
@@ -90,5 +94,37 @@ class ServiceDetailViewController: UIViewController, MFMailComposeViewController
     // Pass the selected object to the new view controller.
     }
     */
+    
+    
+    
+    
+    //    let alert = UIAlertController(title: "Oops!", message:"This feature isn't available right now", preferredStyle: .Alert)
+    //    let action = UIAlertAction(title: "OK", style: .Default) { _ in
+    //        // Put here any code that you would like to execute when
+    //        // the user taps that OK button (may be empty in your case if that's just
+    //        // an informative alert)
+    //    }
+    //    alert.addAction(action)
+    //    self.presentViewController(alert, animated: true){}
+    //
+    
+    
+    
+    
+    
+    //    func showSendMailErrorAlert() {
+    //        let sendMailErrorAlert = UIAlertController(title: "Could Not Send Email", message: "Your device could not send email.  Please check your device's email settings and try again.", delegate: self, cancelButtonTitle: "OK")
+    //        sendMailErrorAlert.show()
+    //    }
+    //
+    
+    // MARK: MFMailComposeViewControllerDelegate
+    
+    func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?) {
+        controller.dismissViewControllerAnimated(true, completion: nil)
+        
+    }
+    
+    
     
 }
