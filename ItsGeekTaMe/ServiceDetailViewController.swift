@@ -10,10 +10,11 @@ import UIKit
 import MessageUI
 
 
-class ServiceDetailViewController: UIViewController, MFMailComposeViewControllerDelegate
+class ServiceDetailViewController: UIViewController, MFMailComposeViewControllerDelegate {
     
+    let gradientLayer = CAGradientLayer()
+
     
-{
     var selectedRow: Int!
     
     
@@ -61,7 +62,7 @@ class ServiceDetailViewController: UIViewController, MFMailComposeViewController
     @IBAction func callAGeekButtonPressed(sender: UIButton) {
         
         UIApplication.sharedApplication().openURL(NSURL(string : "tel://2084069743")!)
-
+        
         
     }
     
@@ -72,7 +73,8 @@ class ServiceDetailViewController: UIViewController, MFMailComposeViewController
         // Do any additional setup after loading the view.
         
         detailsTextView.text = serviceDetailArray[selectedRow]
-
+        
+        
         
     }
     
@@ -82,7 +84,7 @@ class ServiceDetailViewController: UIViewController, MFMailComposeViewController
         
         
     }
-
+    
     
     
     /*

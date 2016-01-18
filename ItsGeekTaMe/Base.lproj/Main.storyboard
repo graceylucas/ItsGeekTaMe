@@ -6,10 +6,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Services-->
+        <!--Services Table View-->
         <scene sceneID="a3H-4w-Bgw">
             <objects>
-                <tableViewController id="QzW-zE-zjd" customClass="ServicesTableViewController" customModule="ItsGeekTaMe" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Services Table View" id="QzW-zE-zjd" customClass="ServicesTableViewController" customModule="ItsGeekTaMe" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="V5b-d5-r2d">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -121,11 +121,11 @@
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
-        <!--Services-->
+        <!--Services Navigation-->
         <scene sceneID="5jq-kc-Scl">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9rK-dP-EFL" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Services" id="UAp-aw-fCi"/>
+                <navigationController title="Services Navigation" automaticallyAdjustsScrollViewInsets="NO" id="9rK-dP-EFL" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Services" image="icon_serivces" selectedImage="icon_serivces" id="UAp-aw-fCi"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="gsx-cb-0eJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -140,10 +140,10 @@
             </objects>
             <point key="canvasLocation" x="744" y="-315"/>
         </scene>
-        <!--IT'S GEEK TA ME-->
+        <!--About-->
         <scene sceneID="pfc-vP-KZm">
             <objects>
-                <viewController id="9fG-Ji-eeP" sceneMemberID="viewController">
+                <viewController title="About" id="9fG-Ji-eeP" customClass="AboutViewController" customModule="ItsGeekTaMe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="enk-Ny-HYB"/>
                         <viewControllerLayoutGuide type="bottom" id="i7Q-Cg-C3n"/>
@@ -162,7 +162,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Connect with us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xMc-h1-Eif">
                                 <rect key="frame" x="20" y="289" width="124" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xH7-ZC-V1Q">
@@ -182,16 +182,15 @@
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j82-df-DX4">
                                 <rect key="frame" x="20" y="82" width="560" height="200"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="pqe-UZ-GwO"/>
                                 </constraints>
                                 <string key="text">It's Geek Ta Me is a mobile-based computer and electronics service company. We fix it all: desktop computers, laptops, tablets, TVs, mobile devices and more. We bring decades of experience to each service call. We will get you back up and running.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="j82-df-DX4" secondAttribute="trailing" id="AF2-yh-5ef"/>
                             <constraint firstItem="j82-df-DX4" firstAttribute="top" secondItem="enk-Ny-HYB" secondAttribute="bottom" constant="18" id="KBQ-mm-7pC"/>
@@ -204,10 +203,10 @@
             </objects>
             <point key="canvasLocation" x="1553" y="371"/>
         </scene>
-        <!--View Controller-->
+        <!--Web View -->
         <scene sceneID="Xp9-Yk-Ahh">
             <objects>
-                <viewController id="56K-rA-kj1" sceneMemberID="viewController">
+                <viewController title="Web View " id="56K-rA-kj1" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kob-mC-pwc"/>
                         <viewControllerLayoutGuide type="bottom" id="PgP-yr-esw"/>
@@ -232,13 +231,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HXb-O5-02f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2197" y="371"/>
+            <point key="canvasLocation" x="2196" y="371"/>
         </scene>
-        <!--About Geek-->
+        <!--About Navigation Controller-->
         <scene sceneID="5O4-ej-Qgk">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="B1N-3M-8ed" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="About Geek" id="AI0-nU-z7x"/>
+                <navigationController title="About Navigation Controller" automaticallyAdjustsScrollViewInsets="NO" id="B1N-3M-8ed" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="It's Geek Ta Me" image="icon_about" id="AI0-nU-z7x"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="tOd-h5-aF4">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -254,6 +253,10 @@
             <point key="canvasLocation" x="741" y="371"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icon_about" width="24" height="24"/>
+        <image name="icon_serivces" width="24" height="24"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="sCH-kp-bmv"/>
     </inferredMetricsTieBreakers>

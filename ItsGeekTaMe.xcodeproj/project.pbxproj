@@ -15,6 +15,8 @@
 		7D4093BB1C41EEC600E37565 /* ItsGeekTaMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4093BA1C41EEC600E37565 /* ItsGeekTaMeUITests.swift */; };
 		7D4093C91C41F36C00E37565 /* ServicesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4093C81C41F36C00E37565 /* ServicesTableViewController.swift */; };
 		7D4093CB1C41FA0C00E37565 /* ServiceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4093CA1C41FA0C00E37565 /* ServiceDetailViewController.swift */; };
+		7D5D45B81C4D6381009357DA /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5D45B71C4D6381009357DA /* Colors.swift */; };
+		7D5D45BC1C4D72D8009357DA /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5D45BB1C4D72D8009357DA /* AboutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		7D4093BC1C41EEC600E37565 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D4093C81C41F36C00E37565 /* ServicesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesTableViewController.swift; sourceTree = "<group>"; };
 		7D4093CA1C41FA0C00E37565 /* ServiceDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceDetailViewController.swift; sourceTree = "<group>"; };
+		7D5D45B71C4D6381009357DA /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		7D5D45BB1C4D72D8009357DA /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +104,12 @@
 			isa = PBXGroup;
 			children = (
 				7D4093981C41EEC600E37565 /* AppDelegate.swift */,
-				7D4093C81C41F36C00E37565 /* ServicesTableViewController.swift */,
-				7D4093CA1C41FA0C00E37565 /* ServiceDetailViewController.swift */,
+				7D5D45BD1C4D74FD009357DA /* ViewControllers */,
 				7D40939E1C41EEC600E37565 /* Main.storyboard */,
 				7D4093A11C41EEC600E37565 /* Assets.xcassets */,
 				7D4093A31C41EEC600E37565 /* LaunchScreen.storyboard */,
 				7D4093A61C41EEC600E37565 /* Info.plist */,
+				7D5D45B71C4D6381009357DA /* Colors.swift */,
 			);
 			path = ItsGeekTaMe;
 			sourceTree = "<group>";
@@ -126,6 +130,16 @@
 				7D4093BC1C41EEC600E37565 /* Info.plist */,
 			);
 			path = ItsGeekTaMeUITests;
+			sourceTree = "<group>";
+		};
+		7D5D45BD1C4D74FD009357DA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7D4093C81C41F36C00E37565 /* ServicesTableViewController.swift */,
+				7D4093CA1C41FA0C00E37565 /* ServiceDetailViewController.swift */,
+				7D5D45BB1C4D72D8009357DA /* AboutViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +274,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D4093C91C41F36C00E37565 /* ServicesTableViewController.swift in Sources */,
+				7D5D45B81C4D6381009357DA /* Colors.swift in Sources */,
 				7D4093991C41EEC600E37565 /* AppDelegate.swift in Sources */,
+				7D5D45BC1C4D72D8009357DA /* AboutViewController.swift in Sources */,
 				7D4093CB1C41FA0C00E37565 /* ServiceDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,6 +504,7 @@
 				7D4093C11C41EEC600E37565 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7D4093C21C41EEC600E37565 /* Build configuration list for PBXNativeTarget "ItsGeekTaMeTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +513,7 @@
 				7D4093C41C41EEC600E37565 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7D4093C51C41EEC600E37565 /* Build configuration list for PBXNativeTarget "ItsGeekTaMeUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +522,7 @@
 				7D4093C71C41EEC600E37565 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
