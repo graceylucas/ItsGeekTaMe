@@ -32,7 +32,7 @@
                             <outlet property="delegate" destination="QzW-zE-zjd" id="Qcy-pg-3NK"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Services" id="T7F-Sc-tWq"/>
+                    <navigationItem key="navigationItem" title="NEED SOMEONE WHO SPEAKS GEEK?" id="T7F-Sc-tWq"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EGe-BI-9Gb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -59,23 +59,25 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jSh-0a-L9w">
-                                <rect key="frame" x="28" y="427" width="89" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jSh-0a-L9w">
+                                <rect key="frame" x="28" y="427" width="135" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="GDo-Zo-r7k"/>
                                     <constraint firstAttribute="width" constant="89" id="f0A-ga-w0d"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Email a Geek"/>
                                 <connections>
                                     <action selector="emailAGeekButtonPressed:" destination="HJ7-N5-8Yd" eventType="touchUpInside" id="PtJ-fS-dWF"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RwJ-3F-aZT">
-                                <rect key="frame" x="494" y="427" width="78" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RwJ-3F-aZT">
+                                <rect key="frame" x="426" y="427" width="146" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="6z6-V9-bSD"/>
                                     <constraint firstAttribute="width" constant="78" id="VLd-tR-Wwo"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Call a Geek"/>
                                 <connections>
                                     <action selector="callAGeekButtonPressed:" destination="HJ7-N5-8Yd" eventType="touchUpInside" id="jPW-N9-QWe"/>
@@ -125,7 +127,7 @@
         <scene sceneID="5jq-kc-Scl">
             <objects>
                 <navigationController title="Services Navigation" automaticallyAdjustsScrollViewInsets="NO" id="9rK-dP-EFL" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Services" image="icon_serivces" selectedImage="icon_serivces" id="UAp-aw-fCi"/>
+                    <tabBarItem key="tabBarItem" title="What we do" image="icon_serivces" selectedImage="icon_serivces" id="UAp-aw-fCi"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="gsx-cb-0eJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -152,50 +154,150 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3V5-gk-2Ai">
-                                <rect key="frame" x="267" y="440" width="67" height="30"/>
-                                <state key="normal" title="Facebook"/>
-                                <connections>
-                                    <segue destination="56K-rA-kj1" kind="show" id="XNo-qY-7nd"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Connect with us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xMc-h1-Eif">
-                                <rect key="frame" x="20" y="289" width="124" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xH7-ZC-V1Q">
-                                <rect key="frame" x="276" y="478" width="48" height="30"/>
-                                <state key="normal" title="Twitter"/>
-                                <connections>
-                                    <segue destination="56K-rA-kj1" kind="show" id="sCH-kp-bmv"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ha-gA-Xg2">
-                                <rect key="frame" x="20" y="364" width="560" height="30"/>
-                                <state key="normal" title="Phone"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v1t-Ms-Zsr">
-                                <rect key="frame" x="20" y="402" width="560" height="30"/>
-                                <state key="normal" title="Email"/>
-                            </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j82-df-DX4">
-                                <rect key="frame" x="20" y="82" width="560" height="200"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="pqe-UZ-GwO"/>
-                                </constraints>
-                                <string key="text">It's Geek Ta Me is a mobile-based computer and electronics service company. We fix it all: desktop computers, laptops, tablets, TVs, mobile devices and more. We bring decades of experience to each service call. We will get you back up and running.</string>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="-1" translatesAutoresizingMaskIntoConstraints="NO" id="SnQ-Ve-wgS">
+                                <rect key="frame" x="20" y="74" width="560" height="477"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WHO WE ARE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i80-fp-KlN">
+                                        <rect key="frame" x="220" y="0.0" width="120" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="22" id="cRx-o6-HoP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" editable="NO" text="It's Geek Ta Me is a mobile-based computer and electronics service company. " textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j82-df-DX4" userLabel="Who We Are Text View">
+                                        <rect key="frame" x="4" y="21" width="553" height="120"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="Bcp-7q-JXy"/>
+                                            <constraint firstAttribute="height" constant="200" id="pqe-UZ-GwO"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="pqe-UZ-GwO"/>
+                                            </mask>
+                                        </variation>
+                                    </textView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WHAT WE DO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hEb-r4-u0m">
+                                        <rect key="frame" x="220" y="140" width="121" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="22" id="DJO-k7-0B9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZw-uF-Dlr" userLabel="What We Do Text View">
+                                        <rect key="frame" x="0.0" y="161" width="560" height="140"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="140" id="16F-Vi-eiN"/>
+                                        </constraints>
+                                        <string key="text">We fix it all: desktop computers, laptops, tablets, TVs, mobile devices and more. We bring decades of experience to each service call. We will get you back up and running.</string>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="REACH A GEEK" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xMc-h1-Eif">
+                                        <rect key="frame" x="214" y="300" width="133" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="22" id="Kog-Q8-yXZ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="er1-VN-LZw" userLabel="Button Container View">
+                                        <rect key="frame" x="0.0" y="321" width="560" height="156"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kCs-S3-BMO">
+                                                <rect key="frame" x="8" y="8" width="544" height="140"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Lz7-OV-ePO">
+                                                        <rect key="frame" x="0.0" y="0.0" width="544" height="92"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fg5-aI-gIU">
+                                                                <rect key="frame" x="0.0" y="29" width="104" height="34"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                                <state key="normal" title="Email a Geek">
+                                                                    <color key="titleColor" red="1" green="0.81330078179999998" blue="0.20628701690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="emailAGeekButtonPressed:" destination="HJ7-N5-8Yd" eventType="touchUpInside" id="Yj8-xy-IFW"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bmY-Xi-63H">
+                                                                <rect key="frame" x="452" y="29" width="92" height="34"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                                <state key="normal" title="Call a Geek">
+                                                                    <color key="titleColor" red="1" green="0.81330078175038489" blue="0.20628701685847206" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="callAGeekButtonPressed:" destination="HJ7-N5-8Yd" eventType="touchUpInside" id="5XW-8L-7gu"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="BY5-97-7vS">
+                                                        <rect key="frame" x="0.0" y="92" width="544" height="48"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3V5-gk-2Ai" userLabel="Facebook Button">
+                                                                <rect key="frame" x="0.0" y="0.0" width="272" height="48"/>
+                                                                <state key="normal" image="facebook_icon"/>
+                                                                <connections>
+                                                                    <segue destination="56K-rA-kj1" kind="show" id="XNo-qY-7nd"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xH7-ZC-V1Q" userLabel="Twitter Button">
+                                                                <rect key="frame" x="272" y="0.0" width="272" height="48"/>
+                                                                <state key="normal" image="twitter_icon"/>
+                                                                <connections>
+                                                                    <segue destination="56K-rA-kj1" kind="show" id="sCH-kp-bmv"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailingMargin" secondItem="BY5-97-7vS" secondAttribute="trailing" id="4HN-iC-KeM"/>
+                                                    <constraint firstItem="BY5-97-7vS" firstAttribute="leading" secondItem="kCs-S3-BMO" secondAttribute="leadingMargin" id="FuY-2X-kaO"/>
+                                                    <constraint firstItem="Lz7-OV-ePO" firstAttribute="leading" secondItem="kCs-S3-BMO" secondAttribute="leadingMargin" id="rSX-DK-wBm"/>
+                                                    <constraint firstAttribute="trailingMargin" secondItem="Lz7-OV-ePO" secondAttribute="trailing" id="tQF-Kw-hRW"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailingMargin" secondItem="kCs-S3-BMO" secondAttribute="trailing" id="GUQ-G1-5lG"/>
+                                            <constraint firstItem="kCs-S3-BMO" firstAttribute="leading" secondItem="er1-VN-LZw" secondAttribute="leadingMargin" id="Ro6-LK-fZN"/>
+                                            <constraint firstItem="kCs-S3-BMO" firstAttribute="top" secondItem="er1-VN-LZw" secondAttribute="topMargin" id="a7P-kz-23P"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="kCs-S3-BMO" secondAttribute="bottom" id="vfB-x0-Z52"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
                         </subviews>
+                        <color key="backgroundColor" red="0.057157702025043666" green="0.49014085994637879" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="j82-df-DX4" secondAttribute="trailing" id="AF2-yh-5ef"/>
-                            <constraint firstItem="j82-df-DX4" firstAttribute="top" secondItem="enk-Ny-HYB" secondAttribute="bottom" constant="18" id="KBQ-mm-7pC"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="j82-df-DX4" secondAttribute="leading" id="r3P-d2-Boj"/>
+                            <constraint firstItem="SnQ-Ve-wgS" firstAttribute="top" secondItem="enk-Ny-HYB" secondAttribute="bottom" constant="10" id="7Zr-Ju-aw1"/>
+                            <constraint firstItem="i7Q-Cg-C3n" firstAttribute="top" secondItem="SnQ-Ve-wgS" secondAttribute="bottom" id="Bi1-qv-ipq"/>
+                            <constraint firstItem="SnQ-Ve-wgS" firstAttribute="leading" secondItem="G0e-jf-WrN" secondAttribute="leading" constant="20" id="R7N-gr-SIO"/>
+                            <constraint firstAttribute="trailing" secondItem="SnQ-Ve-wgS" secondAttribute="trailing" constant="20" id="cOV-8M-ypc"/>
+                            <constraint firstItem="SnQ-Ve-wgS" firstAttribute="top" secondItem="enk-Ny-HYB" secondAttribute="bottom" constant="10" id="oMB-UW-bbs"/>
+                            <constraint firstItem="i7Q-Cg-C3n" firstAttribute="top" secondItem="SnQ-Ve-wgS" secondAttribute="bottom" constant="10" id="ych-64-deP"/>
+                            <constraint firstItem="SnQ-Ve-wgS" firstAttribute="leading" secondItem="G0e-jf-WrN" secondAttribute="leadingMargin" id="zFk-c3-mMn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SnQ-Ve-wgS" secondAttribute="trailing" id="zUT-89-85D"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="R7N-gr-SIO"/>
+                                <exclude reference="cOV-8M-ypc"/>
+                                <exclude reference="oMB-UW-bbs"/>
+                                <exclude reference="ych-64-deP"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="IT'S GEEK TA ME" id="DjE-Zr-up4"/>
                 </viewController>
@@ -237,7 +339,7 @@
         <scene sceneID="5O4-ej-Qgk">
             <objects>
                 <navigationController title="About Navigation Controller" automaticallyAdjustsScrollViewInsets="NO" id="B1N-3M-8ed" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="It's Geek Ta Me" image="icon_about" id="AI0-nU-z7x"/>
+                    <tabBarItem key="tabBarItem" title="Who We Are" image="icon_about" id="AI0-nU-z7x"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="tOd-h5-aF4">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -254,8 +356,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="facebook_icon" width="48" height="48"/>
         <image name="icon_about" width="24" height="24"/>
         <image name="icon_serivces" width="24" height="24"/>
+        <image name="twitter_icon" width="48" height="48"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="sCH-kp-bmv"/>
