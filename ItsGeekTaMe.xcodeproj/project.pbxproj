@@ -17,6 +17,7 @@
 		7D4093CB1C41FA0C00E37565 /* ServiceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4093CA1C41FA0C00E37565 /* ServiceDetailViewController.swift */; };
 		7D5D45B81C4D6381009357DA /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5D45B71C4D6381009357DA /* Colors.swift */; };
 		7D5D45BC1C4D72D8009357DA /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5D45BB1C4D72D8009357DA /* AboutViewController.swift */; };
+		7D6F1C251C4F49A100A0A230 /* ServiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6F1C241C4F49A100A0A230 /* ServiceTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		7D4093CA1C41FA0C00E37565 /* ServiceDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceDetailViewController.swift; sourceTree = "<group>"; };
 		7D5D45B71C4D6381009357DA /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		7D5D45BB1C4D72D8009357DA /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		7D6F1C241C4F49A100A0A230 /* ServiceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		7D4093971C41EEC600E37565 /* ItsGeekTaMe */ = {
 			isa = PBXGroup;
 			children = (
+				7D6F1C231C4F497400A0A230 /* Cells */,
 				7D4093981C41EEC600E37565 /* AppDelegate.swift */,
 				7D5D45BD1C4D74FD009357DA /* ViewControllers */,
 				7D40939E1C41EEC600E37565 /* Main.storyboard */,
@@ -140,6 +143,14 @@
 				7D5D45BB1C4D72D8009357DA /* AboutViewController.swift */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		7D6F1C231C4F497400A0A230 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				7D6F1C241C4F49A100A0A230 /* ServiceTableViewCell.swift */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D4093C91C41F36C00E37565 /* ServicesTableViewController.swift in Sources */,
+				7D6F1C251C4F49A100A0A230 /* ServiceTableViewCell.swift in Sources */,
 				7D5D45B81C4D6381009357DA /* Colors.swift in Sources */,
 				7D4093991C41EEC600E37565 /* AppDelegate.swift in Sources */,
 				7D5D45BC1C4D72D8009357DA /* AboutViewController.swift in Sources */,

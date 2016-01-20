@@ -10,19 +10,46 @@
         <scene sceneID="a3H-4w-Bgw">
             <objects>
                 <tableViewController title="Services Table View" id="QzW-zE-zjd" customClass="ServicesTableViewController" customModule="ItsGeekTaMe" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="V5b-d5-r2d">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="78" sectionHeaderHeight="28" sectionFooterHeight="28" id="V5b-d5-r2d">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="serviceCell" id="j9W-CN-FsO">
-                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="serviceCell" id="j9W-CN-FsO" customClass="ServiceTableViewCell" customModule="ItsGeekTaMe" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="78"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="j9W-CN-FsO" id="gD0-iQ-LzF">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="77"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="facebook_icon" translatesAutoresizingMaskIntoConstraints="NO" id="wTb-9c-XCD">
+                                            <rect key="frame" x="8" y="16" width="45" height="45"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="45" id="NrO-Ob-vP2"/>
+                                                <constraint firstAttribute="width" constant="45" id="ifH-1p-SvW"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Service Cell Text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n5Z-Fd-p8D">
+                                            <rect key="frame" x="61" y="5" width="531" height="67"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="n5Z-Fd-p8D" secondAttribute="bottom" constant="5" id="15K-Bf-8Ie"/>
+                                        <constraint firstItem="n5Z-Fd-p8D" firstAttribute="top" secondItem="gD0-iQ-LzF" secondAttribute="top" constant="5" id="BCC-MR-1jh"/>
+                                        <constraint firstItem="wTb-9c-XCD" firstAttribute="centerY" secondItem="gD0-iQ-LzF" secondAttribute="centerY" id="Z4N-Er-Pql"/>
+                                        <constraint firstItem="n5Z-Fd-p8D" firstAttribute="leading" secondItem="wTb-9c-XCD" secondAttribute="trailing" constant="8" id="ZH3-bh-tLH"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <constraints>
+                                    <constraint firstItem="wTb-9c-XCD" firstAttribute="leading" secondItem="j9W-CN-FsO" secondAttribute="leading" constant="8" id="PJw-cU-9Dm"/>
+                                    <constraint firstAttribute="trailing" secondItem="n5Z-Fd-p8D" secondAttribute="trailing" constant="8" id="nPd-pM-PhW"/>
+                                </constraints>
                                 <connections>
+                                    <outlet property="serviceDetailLabel" destination="n5Z-Fd-p8D" id="KC5-jO-bWY"/>
+                                    <outlet property="serviceImageView" destination="wTb-9c-XCD" id="Se6-q7-ykq"/>
                                     <segue destination="HJ7-N5-8Yd" kind="show" identifier="showServiceDetailSegue" id="quW-uQ-z0L"/>
                                 </connections>
                             </tableViewCell>
@@ -32,7 +59,7 @@
                             <outlet property="delegate" destination="QzW-zE-zjd" id="Qcy-pg-3NK"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="NEED SOMEONE WHO SPEAKS GEEK?" id="T7F-Sc-tWq"/>
+                    <navigationItem key="navigationItem" title="NEED A GEEK?" id="T7F-Sc-tWq"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EGe-BI-9Gb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

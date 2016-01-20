@@ -45,10 +45,13 @@ class ServicesTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("serviceCell", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("serviceCell", forIndexPath: indexPath) as! ServiceTableViewCell
 
+            cell.serviceDetailLabel.text = servicesArray[indexPath.row]
         
-        cell.textLabel?.text = servicesArray[indexPath.row]
+        
+        
+//        cell.textLabel?.text = servicesArray[indexPath.row]
         
         
         return cell
