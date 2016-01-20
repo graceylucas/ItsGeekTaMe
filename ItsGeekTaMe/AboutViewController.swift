@@ -47,7 +47,7 @@ class AboutViewController: UIViewController {
         
         gradientLayer.colors = [Colors.darkBlue.CGColor, Colors.lightBlue.CGColor]
         
-        gradientLayer.locations = [0.1, 0.95]
+        gradientLayer.locations = [0.4, 0.95]
         
         self.backgroundView.layer.addSublayer(gradientLayer)
         
