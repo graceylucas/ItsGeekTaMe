@@ -58,7 +58,13 @@ class ServicesTableViewController: UITableViewController {
         cell.backgroundColor = Colors.mintGreenAccent
         cell.cardView.layer.cornerRadius = 4
         cell.cardView.layer.masksToBounds = true
+        cell.cardView.layer.borderColor = UIColor.grayColor().CGColor
+        cell.cardView.layer.borderWidth = 0.3
         
+//        
+//        
+//        view.layer.borderColor = UIColor.grayColor().CGColor;
+//        view.layer.borderWidth = 0.5;
         
 //
 //        view.layer.cornerRadius = 10;
