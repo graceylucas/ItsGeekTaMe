@@ -16,6 +16,7 @@ class ServiceTableViewCell: UITableViewCell {
     @IBOutlet weak var serviceDetailLabel: UILabel!
     
     
+    @IBOutlet weak var cardView: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

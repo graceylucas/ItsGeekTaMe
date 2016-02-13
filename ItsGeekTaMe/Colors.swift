@@ -27,12 +27,17 @@ struct Colors {
     
     static let primaryBackground = UIColor(red: 66.0/255.0, green: 180.0/255.0, blue: 154.0/255.0, alpha: 1)
  
-    // Gray accent color
     
-    static let grayAcccent = UIColor(red: 223.0/255/0, green: 223.0/255.0, blue: 223.0/255.0, alpha: 1)
+    // Gray color
     
-//    // Light gray accent color for UITabBar unselected items
-//    
-//    static let lightGrayAccent = UIColor(red: <#T##CGFloat#>, green: <#T##CGFloat#>, blue: <#T##CGFloat#>, alpha: <#T##CGFloat#>)
-//    
+    static let lightGrayAcccent = UIColor(red: 223.0/255.0, green: 223.0/255.0, blue: 223.0/255.0, alpha: 1)
+    
+    
+    // Mint green accent color
+    
+    static let mintGreenAccent = UIColor(red: 171.0/255.0, green: 208.0/255.0, blue: 203.0/255.0, alpha: 1)
+    
+    
+    
+    
 }
