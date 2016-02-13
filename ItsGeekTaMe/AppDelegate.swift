@@ -16,9 +16,36 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        setUpAppearance()
+        
         return true
     }
 
+    
+    func setUpAppearance() {
+        // Sets UITabBar tint color
+        UITabBar.appearance().tintColor = Colors.primaryBackground
+        
+        // Sets navigation bar button item color
+
+        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
+
+        
+        // Sets UITabBar item color when selected
+//        
+//        UITabNavigationBar.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.whiteColor()], forState: UIControlState.Selected)
+//        
+//        // Sets UITabBar item color when not selected
+//
+//        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: Colors.grayAcccent], forState: UIControlState.Normal)
+//
+//        
+////        UITabBarItem.appearance().
+//
+    }
+    
+    
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.

@@ -31,7 +31,8 @@ struct Colors {
     
     static let grayAcccent = UIColor(red: 223.0/255/0, green: 223.0/255.0, blue: 223.0/255.0, alpha: 1)
     
-    
-    
-    
+//    // Light gray accent color for UITabBar unselected items
+//    
+//    static let lightGrayAccent = UIColor(red: <#T##CGFloat#>, green: <#T##CGFloat#>, blue: <#T##CGFloat#>, alpha: <#T##CGFloat#>)
+//    
 }
