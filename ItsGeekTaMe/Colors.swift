@@ -21,6 +21,17 @@ struct Colors {
     // LIGHT BLUE COLOR IN OBJ C: UIColor(0.004, green:0.278, blue:0.635, alpha:1)
     
     static let lightBlue = UIColor(red: 11.0/255.0, green:39.0/255.0, blue:78.0/255.0, alpha:1)
+   
+    
+    // Navigation bar color
+    
+    static let primaryBackground = UIColor(red: 66.0/255.0, green: 180.0/255.0, blue: 154.0/255.0, alpha: 1)
+ 
+    // Gray accent color
+    
+    static let grayAcccent = UIColor(red: 223.0/255/0, green: 223.0/255.0, blue: 223.0/255.0, alpha: 1)
+    
+    
     
     
 }

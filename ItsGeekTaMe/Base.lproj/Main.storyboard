@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -11,12 +11,12 @@
             <objects>
                 <tableViewController title="Services Table View" id="QzW-zE-zjd" customClass="ServicesTableViewController" customModule="ItsGeekTaMe" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="78" sectionHeaderHeight="28" sectionFooterHeight="28" id="V5b-d5-r2d">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="serviceCell" id="j9W-CN-FsO" customClass="ServiceTableViewCell" customModule="ItsGeekTaMe" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="600" height="78"/>
+                                <rect key="frame" x="0.0" y="28" width="600" height="78"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="j9W-CN-FsO" id="gD0-iQ-LzF">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="77"/>
@@ -32,7 +32,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Service Cell Text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n5Z-Fd-p8D">
                                             <rect key="frame" x="61" y="5" width="531" height="67"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -74,10 +74,10 @@
                         <viewControllerLayoutGuide type="bottom" id="Eqk-I9-Dn1"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="1Qt-Ol-T4n">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Service detail text" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="GEP-83-dle">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="Service detail text" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="GEP-83-dle">
                                 <rect key="frame" x="20" y="77" width="560" height="150"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -87,7 +87,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jSh-0a-L9w">
-                                <rect key="frame" x="28" y="427" width="135" height="30"/>
+                                <rect key="frame" x="28" y="363" width="135" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="GDo-Zo-r7k"/>
                                     <constraint firstAttribute="width" constant="89" id="f0A-ga-w0d"/>
@@ -99,7 +99,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RwJ-3F-aZT">
-                                <rect key="frame" x="426" y="427" width="146" height="30"/>
+                                <rect key="frame" x="426" y="363" width="146" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="6z6-V9-bSD"/>
                                     <constraint firstAttribute="width" constant="78" id="VLd-tR-Wwo"/>
@@ -136,10 +136,13 @@
             <objects>
                 <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                    <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.25882352939999997" green="0.70588235290000001" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="9rK-dP-EFL" kind="relationship" relationship="viewControllers" id="iYc-d0-2pY"/>
@@ -156,9 +159,13 @@
                 <navigationController title="Services Navigation" automaticallyAdjustsScrollViewInsets="NO" id="9rK-dP-EFL" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="What we do" image="icon_serivces" selectedImage="icon_serivces" id="UAp-aw-fCi"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gsx-cb-0eJ">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="gsx-cb-0eJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.25882352941176467" green="0.70588235294117641" blue="0.60392156862745094" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -178,10 +185,10 @@
                         <viewControllerLayoutGuide type="bottom" id="i7Q-Cg-C3n"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="G0e-jf-WrN">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-1" translatesAutoresizingMaskIntoConstraints="NO" id="SnQ-Ve-wgS">
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="-1" translatesAutoresizingMaskIntoConstraints="NO" id="SnQ-Ve-wgS">
                                 <rect key="frame" x="20" y="74" width="560" height="477"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WHO WE ARE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i80-fp-KlN">
@@ -327,10 +334,10 @@
                         <viewControllerLayoutGuide type="bottom" id="PgP-yr-esw"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="VXV-Uu-MXf">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kdS-Ue-GGq">
+                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kdS-Ue-GGq">
                                 <rect key="frame" x="0.0" y="72" width="600" height="479"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
                             </webView>
@@ -354,9 +361,13 @@
                 <navigationController title="About Navigation Controller" automaticallyAdjustsScrollViewInsets="NO" id="B1N-3M-8ed" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Who We Are" image="icon_about" id="AI0-nU-z7x"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tOd-h5-aF4">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="tOd-h5-aF4">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.25882352941176467" green="0.70588235294117641" blue="0.60392156862745094" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
