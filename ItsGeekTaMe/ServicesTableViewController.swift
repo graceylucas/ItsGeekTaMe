@@ -55,24 +55,14 @@ class ServicesTableViewController: UITableViewController {
         
         cell.serviceDetailLabel.text = servicesArray[indexPath.row]
         cell.serviceImageView.image = servicesImageArray[indexPath.row]
+        
         cell.backgroundColor = Colors.mintGreenAccent
+
+        // Rounds cell corners and adds slight shadow as border
         cell.cardView.layer.cornerRadius = 4
         cell.cardView.layer.masksToBounds = true
         cell.cardView.layer.borderColor = UIColor.grayColor().CGColor
         cell.cardView.layer.borderWidth = 0.3
-        
-//        
-//        
-//        view.layer.borderColor = UIColor.grayColor().CGColor;
-//        view.layer.borderWidth = 0.5;
-        
-//
-//        view.layer.cornerRadius = 10;
-//        view.layer.masksToBounds = true;
-        
-        
-        //        cell.textLabel?.text = servicesArray[indexPath.row]
-        
         
         return cell
     }
@@ -126,7 +116,7 @@ class ServicesTableViewController: UITableViewController {
             
             // Pass the selected object to the new view controller.
             serviceDetailViewController.selectedRow = self.tableView.indexPathForSelectedRow?.row
-            
+            serviceDetailViewController.detailTitle = self.servicesArray[self.tableView.indexPathForSelectedRow!.row]
         }
         
         

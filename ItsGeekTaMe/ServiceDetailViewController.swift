@@ -11,11 +11,16 @@ import MessageUI
 
 
 class ServiceDetailViewController: UIViewController, MFMailComposeViewControllerDelegate {
-    
-    let gradientLayer = CAGradientLayer()
-
-    
+     
     var selectedRow: Int!
+    
+    var detailTitle: String!
+    
+    
+    @IBOutlet weak var serviceDetailTitleLabel: UILabel!
+    
+    @IBOutlet weak var detailCardView: UIView!
+    
     
     
     let serviceDetailArray = [
@@ -74,6 +79,17 @@ class ServiceDetailViewController: UIViewController, MFMailComposeViewController
         
         detailsTextView.text = serviceDetailArray[selectedRow]
         
+        serviceDetailTitleLabel.text = detailTitle
+        
+        self.view.backgroundColor = Colors.mintGreenAccent
+        
+        
+        
+        // Rounds card corners and adds slight shadow as border
+        self.detailCardView.layer.cornerRadius = 4
+        self.detailCardView.layer.masksToBounds = true
+        self.detailCardView.layer.borderColor = UIColor.grayColor().CGColor
+        self.detailCardView.layer.borderWidth = 0.3
         
         
     }
