@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D2A6D561C7164EA002F8E27 /* 1. App Icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D2A6D511C7164EA002F8E27 /* 1. App Icon.jpg */; };
+		7D2A6D571C7164EA002F8E27 /* 2. Splash Page.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D2A6D521C7164EA002F8E27 /* 2. Splash Page.png */; };
+		7D2A6D581C7164EA002F8E27 /* 3. Services List Scene.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 7D2A6D531C7164EA002F8E27 /* 3. Services List Scene.JPG */; };
+		7D2A6D591C7164EA002F8E27 /* 4. Services Detail Scene.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 7D2A6D541C7164EA002F8E27 /* 4. Services Detail Scene.JPG */; };
+		7D2A6D5A1C7164EA002F8E27 /* 5. About Scene.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D2A6D551C7164EA002F8E27 /* 5. About Scene.png */; };
 		7D4093991C41EEC600E37565 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4093981C41EEC600E37565 /* AppDelegate.swift */; };
 		7D4093A01C41EEC600E37565 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D40939E1C41EEC600E37565 /* Main.storyboard */; };
 		7D4093A21C41EEC600E37565 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D4093A11C41EEC600E37565 /* Assets.xcassets */; };
@@ -38,6 +43,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7D2A6D511C7164EA002F8E27 /* 1. App Icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "1. App Icon.jpg"; path = "ItsGeekTaMe/1. App Icon.jpg"; sourceTree = "<group>"; };
+		7D2A6D521C7164EA002F8E27 /* 2. Splash Page.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "2. Splash Page.png"; path = "ItsGeekTaMe/2. Splash Page.png"; sourceTree = "<group>"; };
+		7D2A6D531C7164EA002F8E27 /* 3. Services List Scene.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "3. Services List Scene.JPG"; path = "ItsGeekTaMe/3. Services List Scene.JPG"; sourceTree = "<group>"; };
+		7D2A6D541C7164EA002F8E27 /* 4. Services Detail Scene.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "4. Services Detail Scene.JPG"; path = "ItsGeekTaMe/4. Services Detail Scene.JPG"; sourceTree = "<group>"; };
+		7D2A6D551C7164EA002F8E27 /* 5. About Scene.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "5. About Scene.png"; path = "ItsGeekTaMe/5. About Scene.png"; sourceTree = "<group>"; };
 		7D4093951C41EEC600E37565 /* ItsGeekTaMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ItsGeekTaMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D4093981C41EEC600E37565 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D40939F1C41EEC600E37565 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -82,9 +92,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7D2A6D501C7164BF002F8E27 /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				7D2A6D511C7164EA002F8E27 /* 1. App Icon.jpg */,
+				7D2A6D521C7164EA002F8E27 /* 2. Splash Page.png */,
+				7D2A6D531C7164EA002F8E27 /* 3. Services List Scene.JPG */,
+				7D2A6D541C7164EA002F8E27 /* 4. Services Detail Scene.JPG */,
+				7D2A6D551C7164EA002F8E27 /* 5. About Scene.png */,
+			);
+			name = Screenshots;
+			sourceTree = "<group>";
+		};
 		7D40938C1C41EEC600E37565 = {
 			isa = PBXGroup;
 			children = (
+				7D2A6D501C7164BF002F8E27 /* Screenshots */,
 				7D4093971C41EEC600E37565 /* ItsGeekTaMe */,
 				7D4093AE1C41EEC600E37565 /* ItsGeekTaMeTests */,
 				7D4093B91C41EEC600E37565 /* ItsGeekTaMeUITests */,
@@ -259,8 +282,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D4093A51C41EEC600E37565 /* LaunchScreen.storyboard in Resources */,
+				7D2A6D5A1C7164EA002F8E27 /* 5. About Scene.png in Resources */,
 				7D4093A21C41EEC600E37565 /* Assets.xcassets in Resources */,
 				7D4093A01C41EEC600E37565 /* Main.storyboard in Resources */,
+				7D2A6D561C7164EA002F8E27 /* 1. App Icon.jpg in Resources */,
+				7D2A6D581C7164EA002F8E27 /* 3. Services List Scene.JPG in Resources */,
+				7D2A6D571C7164EA002F8E27 /* 2. Splash Page.png in Resources */,
+				7D2A6D591C7164EA002F8E27 /* 4. Services Detail Scene.JPG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
