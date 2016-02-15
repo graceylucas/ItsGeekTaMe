@@ -64,11 +64,14 @@ class AboutViewController: UIViewController, MFMailComposeViewControllerDelegate
     
         // Allows user to open a Facebook webview
     @IBAction func facebookButtonPressed(sender: UIButton) {
+        UIApplication.sharedApplication().openURL(NSURL(string: "https://www.facebook.com/ItsGeekTaMeMobileTechnologyDoctor/")!)
+        
         
     }
     
         // Allows user to open a Twitter webview
     @IBAction func twitterButtonPressed(sender: UIButton) {
+                UIApplication.sharedApplication().openURL(NSURL(string: "https://twitter.com/cbyteme")!)
         
     }
     
