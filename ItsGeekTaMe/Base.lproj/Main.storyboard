@@ -329,7 +329,6 @@
                                                 <state key="normal" image="facebook_icon"/>
                                                 <connections>
                                                     <action selector="facebookButtonPressed:" destination="9fG-Ji-eeP" eventType="touchUpInside" id="XGt-89-FAB"/>
-                                                    <segue destination="56K-rA-kj1" kind="show" id="XNo-qY-7nd"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xH7-ZC-V1Q" userLabel="Twitter Button">
@@ -340,7 +339,6 @@
                                                 <state key="normal" image="twitter_icon"/>
                                                 <connections>
                                                     <action selector="twitterButtonPressed:" destination="9fG-Ji-eeP" eventType="touchUpInside" id="Yfq-pX-Uph"/>
-                                                    <segue destination="56K-rA-kj1" kind="show" id="sCH-kp-bmv"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -402,36 +400,6 @@
             </objects>
             <point key="canvasLocation" x="1553" y="371"/>
         </scene>
-        <!--Web View -->
-        <scene sceneID="Xp9-Yk-Ahh">
-            <objects>
-                <viewController title="Web View " id="56K-rA-kj1" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="kob-mC-pwc"/>
-                        <viewControllerLayoutGuide type="bottom" id="PgP-yr-esw"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="VXV-Uu-MXf">
-                        <rect key="frame" x="0.0" y="64" width="600" height="487"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kdS-Ue-GGq">
-                                <rect key="frame" x="0.0" y="72" width="600" height="479"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
-                            </webView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="PgP-yr-esw" firstAttribute="top" secondItem="kdS-Ue-GGq" secondAttribute="bottom" id="9Ld-hl-fhm"/>
-                            <constraint firstItem="kdS-Ue-GGq" firstAttribute="leading" secondItem="VXV-Uu-MXf" secondAttribute="leadingMargin" constant="-20" id="BfE-Hc-jxP"/>
-                            <constraint firstItem="kdS-Ue-GGq" firstAttribute="top" secondItem="kob-mC-pwc" secondAttribute="bottom" constant="8" id="PuD-uE-Qgp"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="kdS-Ue-GGq" secondAttribute="trailing" constant="-20" id="doe-b8-GbI"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HXb-O5-02f" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2196" y="371"/>
-        </scene>
         <!--About Navigation Controller-->
         <scene sceneID="5O4-ej-Qgk">
             <objects>
@@ -465,8 +433,5 @@
         <image name="phone_icon" width="72" height="72"/>
         <image name="twitter_icon" width="72" height="72"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="sCH-kp-bmv"/>
-    </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.25882352939999997" green="0.70588235290000001" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
 </document>
