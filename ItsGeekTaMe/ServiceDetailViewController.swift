@@ -11,7 +11,7 @@ import MessageUI
 
 
 class ServiceDetailViewController: UIViewController, MFMailComposeViewControllerDelegate {
-     
+    
     var selectedRow: Int!
     
     var detailTitle: String!
@@ -21,6 +21,7 @@ class ServiceDetailViewController: UIViewController, MFMailComposeViewController
     
     @IBOutlet weak var detailCardView: UIView!
     
+    @IBOutlet weak var detailsTextView: UITextView!
     
     
     let serviceDetailArray = [
@@ -42,13 +43,35 @@ class ServiceDetailViewController: UIViewController, MFMailComposeViewController
         
         // Additional Services
         "IT'S GEEK TA ME can setup any of your electronic devices. You name it: Smart TV, iPad, iPod, tablet, gaming device, DVR, TiVo, and more. We have 30+ years experience in electronics!" ]
+   
     
-    
-    @IBOutlet weak var detailsTextView: UITextView!
-    
-    
-    @IBAction func emailAGeekButtonPressed(sender: UIButton) {
+    override func viewDidLoad() {
+        super.viewDidLoad()
         
+        // Do any additional setup after loading the view.
+        
+        detailsTextView.text = serviceDetailArray[selectedRow]
+        serviceDetailTitleLabel.text = detailTitle
+        
+        self.view.backgroundColor = Colors.mintGreenAccent
+        
+        // Rounds card corners and adds slight shadow as border
+        self.detailCardView.layer.cornerRadius = 4
+        self.detailCardView.layer.masksToBounds = true
+        self.detailCardView.layer.borderColor = UIColor.grayColor().CGColor
+        self.detailCardView.layer.borderWidth = 0.3
+        
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+        
+    }
+    
+    
+    // Lets user email It's Geek Ta Me
+    @IBAction func emailAGeekButtonPressed(sender: UIButton) {
         
         let emailTitle = "IT'S GEEK TA ME Service Request"
         let emailMessageText = "Tell us how we can help!"
@@ -64,85 +87,22 @@ class ServiceDetailViewController: UIViewController, MFMailComposeViewController
         
     }
     
+    // Lets user call It's Geek Ta Me
     @IBAction func callAGeekButtonPressed(sender: UIButton) {
-        
         UIApplication.sharedApplication().openURL(NSURL(string : "tel://2084069743")!)
         
+    }
+    // MARK: MFMailComposeViewControllerDelegate
+    func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?) {
+        controller.dismissViewControllerAnimated(true, completion: nil)
         
     }
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
-        
-        detailsTextView.text = serviceDetailArray[selectedRow]
-        
-        serviceDetailTitleLabel.text = detailTitle
-        
-        self.view.backgroundColor = Colors.mintGreenAccent
-        
-        
-        
-        // Rounds card corners and adds slight shadow as border
-        self.detailCardView.layer.cornerRadius = 4
-        self.detailCardView.layer.masksToBounds = true
-        self.detailCardView.layer.borderColor = UIColor.grayColor().CGColor
-        self.detailCardView.layer.borderWidth = 0.3
-        
-        
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-        
-        
-    }
-    
-    
-    
-    /*
-    // MARK: - Navigation
-    
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    // Get the new view controller using segue.destinationViewController.
-    // Pass the selected object to the new view controller.
-    }
-    */
-    
-    
-    
-    
-    //    let alert = UIAlertController(title: "Oops!", message:"This feature isn't available right now", preferredStyle: .Alert)
-    //    let action = UIAlertAction(title: "OK", style: .Default) { _ in
-    //        // Put here any code that you would like to execute when
-    //        // the user taps that OK button (may be empty in your case if that's just
-    //        // an informative alert)
-    //    }
-    //    alert.addAction(action)
-    //    self.presentViewController(alert, animated: true){}
-    //
-    
-    
-    
-    
     
     //    func showSendMailErrorAlert() {
     //        let sendMailErrorAlert = UIAlertController(title: "Could Not Send Email", message: "Your device could not send email.  Please check your device's email settings and try again.", delegate: self, cancelButtonTitle: "OK")
     //        sendMailErrorAlert.show()
     //    }
     //
-    
-    // MARK: MFMailComposeViewControllerDelegate
-    
-    func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?) {
-        controller.dismissViewControllerAnimated(true, completion: nil)
-        
-    }
-    
     
     
 }

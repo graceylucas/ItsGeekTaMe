@@ -221,6 +221,7 @@
 				TargetAttributes = {
 					7D4093941C41EEC600E37565 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = HD5UELD683;
 					};
 					7D4093AA1C41EEC600E37565 = {
 						CreatedOnToolsVersion = 7.2;
@@ -431,6 +432,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ItsGeekTaMe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ninnyworks.ItsGeekTaMe;
@@ -442,6 +444,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ItsGeekTaMe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ninnyworks.ItsGeekTaMe;

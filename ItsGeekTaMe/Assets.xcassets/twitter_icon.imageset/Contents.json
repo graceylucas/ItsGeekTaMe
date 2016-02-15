@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "twitter.48.png",
+      "filename" : "iconmonstr-twitter-3-72.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "twitter.48-1.png",
+      "filename" : "iconmonstr-twitter-3-120.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "twitter.128.png",
+      "filename" : "iconmonstr-twitter-3-240.png",
       "scale" : "3x"
     }
   ],

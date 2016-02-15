@@ -7,80 +7,91 @@
 //
 
 import UIKit
+import MessageUI
 
-class AboutViewController: UIViewController {
 
-//    let gradientLayer = CAGradientLayer()
+class AboutViewController: UIViewController, MFMailComposeViewControllerDelegate {
     
+    @IBOutlet weak var aboutCardView: UIView!
     
     // Declares and instantiates a background view
     let backgroundView = UIView()
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
         
-
         self.view.backgroundColor = Colors.mintGreenAccent
         
-        
-        
-        
-        
-        
-        
-        
-//        // Sets the size/shape of the background view
-//        self.backgroundView.frame = self.view.frame
-//        
-//        // Adds the background view as a subview to the View Controller's main view
-//        self.view.addSubview(self.backgroundView)
-//
-//        // Sends the newly created background view to the back, behind the controls (text, buttons, etc.)
-//        self.view.sendSubviewToBack(backgroundView)
-//        
-//        // Sets the background view to the newly created gradient
-//        self.setGradientBackground()
+        // Rounds card corners and adds slight shadow as border
+        self.aboutCardView.layer.cornerRadius = 4
+        self.aboutCardView.layer.masksToBounds = true
+        self.aboutCardView.layer.borderColor = UIColor.grayColor().CGColor
+        self.aboutCardView.layer.borderWidth = 0.3
         
     }
-    
-    
-
-    
-    
-//    func setGradientBackground() {
-//        
-//        // Creates gradient in background using Colors struct
-//        gradientLayer.frame = self.view.bounds
-//        
-//        gradientLayer.colors = [Colors.darkBlue.CGColor, Colors.lightBlue.CGColor]
-//        
-//        gradientLayer.locations = [0.4, 0.95]
-//        
-//        self.backgroundView.layer.addSublayer(gradientLayer)
-//        
-//        
-//    }
-    
-    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        
     }
     
+    
+    // Allows user to call It's Geek Ta Me
+    @IBAction func phoneButtonPressed(sender: UIButton) {
+        UIApplication.sharedApplication().openURL(NSURL(string : "tel://2084069743")!)
 
+    }
+    
+        // Allows user to email It's Geek Ta Me
+    @IBAction func emailButtonPressed(sender: UIButton) {
+        
+        let emailTitle = "IT'S GEEK TA ME Service Request"
+        let emailMessageText = "Tell us how we can help!"
+        let toRecipent = ["ItsGeekTaMe@gmail.com"]
+        let mailCompose: MFMailComposeViewController = MFMailComposeViewController()
+        mailCompose.mailComposeDelegate = self
+        mailCompose.setSubject(emailTitle)
+        mailCompose.setMessageBody(emailMessageText, isHTML: false)
+        mailCompose.setToRecipients(toRecipent)
+        
+        self.presentViewController(mailCompose, animated: true, completion: nil)
+        
+
+    }
+    
+        // Allows user to open a Facebook webview
+    @IBAction func facebookButtonPressed(sender: UIButton) {
+        
+    }
+    
+        // Allows user to open a Twitter webview
+    @IBAction func twitterButtonPressed(sender: UIButton) {
+        
+    }
+    
+    // MARK: MFMailComposeViewControllerDelegate
+    func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?) {
+        controller.dismissViewControllerAnimated(true, completion: nil)
+        
+    }
+
+    
+    
     /*
     // MARK: - Navigation
-
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    // Get the new view controller using segue.destinationViewController.
+    // Pass the selected object to the new view controller.
     }
     */
-
+    
+    
+    
+    
+    
 }
