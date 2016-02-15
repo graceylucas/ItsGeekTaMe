@@ -14,3 +14,6 @@ Users segue from the above scene to individual service detail pages.
 
 User can also use the tab bar to flip to an about/contact scene.
 ![](https://github.com/graceylucas/ItsGeekTaMe/blob/master/ItsGeekTaMe/5.%20About%20Scene.png)
+
+Users can email the firm directly.
+![](https://github.com/graceylucas/ItsGeekTaMe/blob/master/Screenshots/6.%20Email%20IGTM%20Scene.png)
