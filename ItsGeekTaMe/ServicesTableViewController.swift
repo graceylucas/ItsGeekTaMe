@@ -12,7 +12,7 @@ import UIKit
 class ServicesTableViewController: UITableViewController {
     
     
-    let servicesArray = ["New and Used Computers", "​Web Design", "Network and Internet Managment", "System O﻿ptimization", "Virus and Malware Management", "Additional Services"]
+    let servicesArray = ["New and Used Computers", "​Web Design", "Network and Internet Management", "System Optimization", "Virus and Malware Management", "Additional Services"]
     
     let servicesImageArray = [UIImage(named: "computers_icon"), UIImage(named: "web_design_icon"), UIImage(named: "network_icon"), UIImage(named: "system_icon"), UIImage(named: "virus_icon"), UIImage(named: "additional_icon")]
     
